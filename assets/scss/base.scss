@@ -1,0 +1,86 @@
+
+
+body {
+  padding: 100px;
+  > article {
+    max-width: 1024px;
+    margin: auto;
+  }
+  background: #101010;
+  color: #fff;
+}
+
+
+table {
+  width: 100%;
+  tr, th {
+    > td {
+      padding: 10px;
+    }
+  }
+  tr {
+    &:nth-child(odd) {
+      > td {
+        background: rgba(255,255,255,0.05);
+      }
+    }
+    &:nth-child(even) {
+      > td {
+         background: rgba(255,255,255,0.1);
+      }
+    }
+  }
+}
+
+form {
+  display: flex;
+  INPUT[type=text],
+  INPUT[type=password],
+  SELECT,
+  TEXTAREA {
+
+    background: rgba(255,255,255, 0.05);
+    background: none;
+    border: none;
+    border-bottom: solid 1px rgba(255,255,255, 0.1);
+  
+
+    color: #fff;
+    
+    padding: 15px;
+    padding-left: 0;
+    width: 100%;
+    margin: 2.5px;
+
+
+    
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+    -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+    outline: 0;
+  }
+
+  INPUT[type=text][disabled] {
+    background: none;
+    padding-left: 0;
+  }
+
+  select {
+    border: solid 1px rgba(255,255,255, 0.1);
+    padding: 15px;
+  }
+
+  textarea {
+    background: rgba(255,255,255,0.05);
+    border: none;
+    padding: 15px;
+  }
+
+
+}
